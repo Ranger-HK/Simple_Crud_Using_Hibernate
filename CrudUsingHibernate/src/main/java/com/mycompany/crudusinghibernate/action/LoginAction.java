@@ -4,10 +4,16 @@
  */
 package com.mycompany.crudusinghibernate.action;
 
+import com.opensymphony.xwork2.ActionSupport;
+
 /**
  *
- * @author atlas
+ * @author Ravindu
  */
-public class LoginAction {
-    
+public class LoginAction extends ActionSupport {
+     @Override
+    public String execute(){
+         System.out.println("Done");
+         return SUCCESS;
+    }
 }

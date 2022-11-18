@@ -6,7 +6,7 @@ package com.mycompany.crudusinghibernate.action;
 
 /**
  *
- * @author atlas
+ * @author Ravindu
  */
 public class RegisterAction {
     

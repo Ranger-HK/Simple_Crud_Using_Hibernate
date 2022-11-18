@@ -21,29 +21,29 @@ Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this 
             </interceptor-stack> 
         </interceptors>
         
-        <action name="registeruser" class="com.mycompany.simple_crud_using_strusts2.action.RegisterAction" method="execute">
+        <action name="registeruser" class="com.mycompany.crudusinghibernate.action.RegisterAction" method="execute">
             <result type="json">
                 <param name="root">result</param>
             </result>
         </action>
         
-        <action name="loginuser" class="com.mycompany.simple_crud_using_strusts2.action.LoginAction" method="execute">
+        <action name="loginuser" class="com.mycompany.crudusinghibernate.action.LoginAction" method="execute">
             <result name="success" type="json">
                 <param name="root">result</param>           
             </result>
         </action>
         
-        <action name="report" class="com.mycompany.simple_crud_using_strusts2.action.RegisterAction" method="getAllUser">
+        <action name="report" class="com.mycompany.crudusinghibernate.action.RegisterAction" method="getAllUser">
             <result name="success" type="json">
                 <param name="root"></param>           
             </result>
         </action>
-        <action name="updateuser" class="com.mycompany.simple_crud_using_strusts2.action.RegisterAction" method="updateUser">
+        <action name="updateuser" class="com.mycompany.crudusinghibernate.action.RegisterAction" method="updateUser">
             <result name="success" type="json">
                 <param name="root">result</param>           
             </result>
         </action>
-        <action name="deleteuser" class="com.mycompany.simple_crud_using_strusts2.action.RegisterAction" method="deleteUser">
+        <action name="deleteuser" class="com.mycompany.crudusinghibernate.action.RegisterAction" method="deleteUser">
             <result name="success" type="json">
                 <param name="root">result</param>           
             </result>
