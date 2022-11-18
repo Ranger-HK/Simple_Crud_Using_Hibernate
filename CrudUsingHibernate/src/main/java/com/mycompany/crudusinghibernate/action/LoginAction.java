@@ -11,9 +11,11 @@ import com.opensymphony.xwork2.ActionSupport;
  * @author Ravindu
  */
 public class LoginAction extends ActionSupport {
-     @Override
-    public String execute(){
-         System.out.println("Done");
-         return SUCCESS;
+
+    @Override
+    public String execute() {
+        System.out.println("Done");
+        return SUCCESS;
     }
+
 }
