@@ -19,6 +19,7 @@ function loadAllUsers() {
                 let row = `<tr><td>${user.userID}</td><td>${user.userName}</td><td>${user.address}</td><td>${user.email}</td><td>${user.contact}</td><td>${user.password}</td></tr>`;
                 $("#userTable").append(row);
             }
+            $('#table').DataTable();
         }
     });
 }
