@@ -4,12 +4,18 @@
  */
 package com.mycompany.crudusinghibernate.model;
 
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /**
  *
  * @author Ravindu
  */
-public class Registration  {
+@Entity
+public class Registration implements Serializable {
 
+    @Id
     private String userID;
     private String userName;
     private String address;
