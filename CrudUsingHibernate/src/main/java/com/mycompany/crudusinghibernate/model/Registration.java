@@ -8,7 +8,7 @@ package com.mycompany.crudusinghibernate.model;
  *
  * @author Ravindu
  */
-public class Registration {
+public class Registration  {
 
     private String userID;
     private String userName;

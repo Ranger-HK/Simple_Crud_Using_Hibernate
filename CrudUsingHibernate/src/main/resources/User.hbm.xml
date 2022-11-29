@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.mycompany.crudusinghibernate.model.Registration" table="Registration" catalog="simple_crud_using_hibernate">
+        <id name="userID" type="java.lang.Long">
+            <column name="userID" />
+            <generator class="identity" />
+        </id>
+        <property name="userName" type="string">
+            <column name="userName" />
+        </property>
+        <property name="addresss" type="string">
+            <column name="addresss" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" />
+        </property>
+        <property name="contact" type="string">
+            <column name="contact" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" />
+        </property>
+        <property name="createTime" type="string">
+            <column name="createTime" />
+        </property>
+        <property name="lastUpdateTime" type="string">
+            <column name="lastUpdateTime" />
+        </property>
+    </class>
+</hibernate-mapping>
+
+
