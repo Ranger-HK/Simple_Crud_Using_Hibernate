@@ -4,15 +4,11 @@
  */
 package com.mycompany.crudusinghibernate.dao;
 
-import com.mycompany.crudusinghibernate.db.DbConnection;
 import com.mycompany.crudusinghibernate.model.Registration;
 import com.mycompany.crudusinghibernate.util.Encryption;
 import com.mycompany.crudusinghibernate.util.FactoryConfiguration;
 import java.io.UnsupportedEncodingException;
 import java.security.InvalidKeyException;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -28,8 +24,6 @@ import org.hibernate.Transaction;
 public class RegistrationDao {
 
     Encryption encryption = new Encryption();
-
-    DbConnection dbConnection = new DbConnection();
 
     public boolean registerUser(Registration registration) throws ClassNotFoundException, SQLException, InvalidKeyException, UnsupportedEncodingException, IllegalBlockSizeException, BadPaddingException {
         Session session = FactoryConfiguration.getInstance().getSession();

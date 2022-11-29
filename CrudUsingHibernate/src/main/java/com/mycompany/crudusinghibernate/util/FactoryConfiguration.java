@@ -11,7 +11,7 @@ import org.hibernate.cfg.Configuration;
 
 /**
  *
- * @author atlas
+ * @author Ravindu
  */
 public class FactoryConfiguration {
     
